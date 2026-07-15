@@ -1,50 +1,63 @@
-# 🧠 Data Science & AI — Learning Journey
+# Data Science & AI - Learning Journey
 
-This repo tracks my path toward becoming a **Data Scientist / AI practitioner** —
-organized by **skill**, not by day count. Some modules take a few hours, some
-take weeks. What matters is what I can actually *do* by the end of each one,
-not how fast I got there.
+This is where I'm tracking my path toward becoming a data scientist / ML engineer. I'm not following a fixed day count - some topics take me a few hours, some take a couple of weeks, and that's fine. What matters is what I can actually do by the end of each module, not how fast I got there.
 
-Each module has:
-- `notes.md` → what I learned, in my own words
-- `practice.py` (or notebooks) → runnable code proving I can apply it
+Each folder in this repo has two things:
+- notes.md - what I learned, written in my own words
+- practice.py (or a notebook) - actual code proving I can use it, not just read about it
 
----
+Folders are only created once I'm actually working on that topic. The roadmap below is the full plan, but most of it is still just a plan.
 
-## 🗺️ Roadmap & Progress
+## Roadmap
 
-| # | Module | Status | What it covers |
-|---|--------|--------|-----------------|
-| 01 | [Python Core](./01-python-core) | ✅ Done | Syntax, variables, data types, strings, lists/tuples/sets/dicts, control flow, functions |
-| 02 | Data Wrangling (Pandas & NumPy) | ⏳ Next | Loading messy data, cleaning it, answering simple questions from it |
-| 03 | Statistics & Probability | ⏳ Planned | Enough stats to actually understand what data is telling me |
-| 04 | Exploratory Data Analysis (EDA) | ⏳ Planned | Turning pandas + stats into a repeatable "explore this dataset" workflow |
-| 05 | Data Visualization | ⏳ Planned | Matplotlib, Seaborn — making findings communicable |
-| 06 | Working with Data Sources | ⏳ Planned | File handling → SQL/databases → APIs → web scraping |
-| 07 | Git & GitHub | 🔄 Ongoing | Version control — used throughout, not a one-time module |
-| 08 | Projects | ⏳ Planned | Real, messy, end-to-end datasets — the actual proof of everything above |
-| — | AI / LLM Tooling | ⏳ Later | Using AI/LLM APIs to accelerate and automate parts of the DS workflow |
+### Phase 1: Foundations
+- Python core (syntax, data structures, control flow, functions) - Done
+- Error handling and file handling - Next
+- (Software basics: git/GitHub, virtual environments, working with APIs - picked up as needed, not a separate phase)
 
-**Legend:** ✅ Done · 🔄 In progress · ⏳ Not started yet
+### Phase 2: Data Wrangling
+- Pandas and NumPy - loading messy data, cleaning it, answering basic questions
+- SQL - querying, joins, working with databases from Python
 
----
+### Phase 3: Math & Stats
+- Linear algebra - vectors, matrices, the basics behind ML math
+- Calculus - derivatives, gradients, optimization intuition
+- Probability - distributions, Bayes' theorem
+- Statistics - the stuff that turns raw numbers into actual conclusions
 
-## 🎯 Why this order
+### Phase 4: ML Core
+- ML fundamentals - what ML actually is, types of problems, train/test splits, loss vs metrics
+- Feature engineering - turning raw data into something a model can use
+- ML algorithms - linear models, trees, ensembles, boosting, clustering, dimensionality reduction
+- Advanced concepts - hyperparameter tuning, imbalanced data, interpretability (SHAP/LIME)
 
-Business problem → Get data → Clean data → Explore data (EDA) → Build model →
-Evaluate → Communicate/deploy.
+### Phase 5: Applied ML
+- End-to-end projects - the classics (Titanic, house prices, churn) plus real practice problems
+- NLP - text preprocessing, representation (TF-IDF), traditional models, full pipeline
+- Computer vision - image basics, feature detection, transformations, full pipeline
 
-Python is the tool used at every step of that chain. Data wrangling comes right
-after Python because it's the skill used in *every single project* from here
-on — everything else (stats, viz, ML) sits on top of being able to load and
-clean data reliably.
+### Phase 6: Deep Learning
+- Neural network foundations - how they actually learn, backpropagation
+- Optimizing a neural network - optimizers, regularization, training practices
+- CNNs and transfer learning
+- Sequence models - RNN, LSTM, GRU
+- Seq2Seq and Transformers - the architecture behind every modern LLM
+- PyTorch - actually building and training all of the above
+- NLP and computer vision using deep learning - embeddings, object detection, segmentation, ViT
 
-AI/LLM tooling comes last on purpose: it's most useful once I already
-understand what's happening underneath, so I'm directing it instead of
-blindly trusting it.
+### Phase 7: ML Engineering
+- ML system design - problem formulation, data/feature systems, evaluation, serving, monitoring
+- MLOps - data versioning, experiment tracking, pipelines, CI/CD, monitoring, retraining
+- MLOps for deep learning - distributed training, checkpointing, large model storage, optimized inference
 
----
+### Phase 8: Modern AI
+- LLMs and GenAI - fine-tuning vs prompting, RAG, agents, LangChain, Hugging Face
+- Cloud platforms - Azure / AWS / Databricks, running notebooks and tracking experiments at scale
 
-## 📌 Current focus
-**Module 02 — Data Wrangling**: learning to load messy data, clean it, and
-answer basic questions using pandas/numpy.
+## Why this order
+
+Each phase sits on top of the one before it. You can't do feature engineering well without knowing pandas. You can't do ML system design without having actually built a few models first. Deep learning needs the math from Phase 3. LLMs and GenAI come last on purpose - they're most useful once I understand what's happening underneath, so I can actually direct them instead of blindly trusting them.
+
+## Current focus
+
+Error handling and file handling, right before starting Pandas and NumPy.
